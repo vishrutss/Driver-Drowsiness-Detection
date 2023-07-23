@@ -9,13 +9,15 @@ Mouth detection is done similarly to that of the eyes. The program looks for 2 d
 
 These 2 programs are then combined to create a probability function to avoid wrong detection. The probability values are as follows
 
-Mouth	Closing	Split
-Eyes		
-Open	100%	  84%
-Close	50%	    15%
+| Mouth  | Closing | Split |
+|--------|--------:|------:|
+| Eyes   |         |       |
+| Open   |  100%   |  84%  |
+| Close  |   50%   |  15%  |
+
 Once the probability has been determined a random number is generated and the application checks in what range the number falls. It then gives the final verdict on whether the driver is drowsy or awake. Since the program runs a check constantly every second there is a very low chance of the application performing a wrong prediction constantly for a long period.
 
-# How to run application
+# How to run the application
 Please run the DrowsinessDetection.m file first. This will open your webcam and start the detection process.
 If you are facing any issues running this file make sure that you have downloaded the required packages for MATLAB to access your webcam.
 You will be prompted to download the required packages in the error message.
